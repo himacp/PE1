@@ -6,7 +6,7 @@ package com.company;
  */
 
 import java.util.Scanner;
-public class unspecified
+public class Unspecified
 {
     public static void main(String[] args) {
         int n;

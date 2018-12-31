@@ -8,7 +8,7 @@ package com.company;
 
 import java.util.Scanner;
 
-public class vowel {
+public class Vowel {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter your String");

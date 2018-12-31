@@ -8,7 +8,7 @@ import java.util.Scanner;
  * the last n characters should repeat n number of times in the output String.
  */
 
-public class repeatnumber
+public class Repeatnum
 {
     public static void main(String[] args)
     {

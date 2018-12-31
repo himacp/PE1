@@ -4,7 +4,7 @@ package com.company;
  *  This program is about to reverse any string without using String Buffer.
  */
 import java.util.Scanner;
-public class reverse {
+public class Reversestring {
     public static void main(String[] args)
     {
         String str;

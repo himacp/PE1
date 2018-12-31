@@ -9,7 +9,7 @@ package com.company;
 
 import java.util.Scanner;
 
-    public class sort{
+    public class Sort{
         static void sort (int arr[],int n)
         {
             int temp;
