@@ -10,7 +10,7 @@ package com.company;
 
     import java.util.Scanner;
 
-    public class Originalnum {
+    public class OriginalNumber {
 
 
         public static void main(String[] args) {

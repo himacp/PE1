@@ -6,13 +6,13 @@ import org.junit.runners.JUnit4;
 
 @RunWith(JUnit4.class)
 
-public class vowelTest
+public class VowelConsonantTest
 {
 
     @Test
     public void demo()
     {
-        Vowel obj = new Vowel();
+        VowelConsonant obj = new VowelConsonant();
         String expectedValue = "Consonant";
         //Act
         String actualValue=obj.func('h');

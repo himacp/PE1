@@ -1,7 +1,18 @@
+/* Hima C P
+ *
+ * Stack Route,Bangalore
+ *
+ * Boeing India Pvt Ltd.
+ */
+
+/*Program to print a number pattern.
+ * If the input is 5.
+ * Output should be 1 2 2 3 3 3 4 4 4 4 5 5 5 5 5.
+ */
 
 import java.util.Scanner;
 
-public class Iteration
+public class IterationOfNumbers
 {
 
     String function(int num)
@@ -21,7 +32,7 @@ public class Iteration
             Scanner input = new Scanner(System.in);
             System.out.println("Enter your Number:");
             int num=input.nextInt();
-             Iteration obj = new Iteration();
+             IterationOfNumbers obj = new IterationOfNumbers();
         System.out.println(obj.function(num));
 
         }

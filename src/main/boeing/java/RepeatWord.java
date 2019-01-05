@@ -1,3 +1,13 @@
+/* Hima C P
+ *
+ * Stack Route,Bangalore
+ *
+ * Boeing India Pvt Ltd.
+ */
+
+/* Program to repeat the last n characters of the string n times along with the given string.
+ */
+
 public class RepeatWord
 {
     String repeatNtimes(String str, int n) {

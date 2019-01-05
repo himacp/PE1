@@ -1,4 +1,4 @@
-package com.company;
+
 
 
 /**
@@ -9,7 +9,7 @@ package com.company;
  *   whether the character entered is a special Character.
  */
 import java.util.Scanner;
-public class Capitalletter
+public class CapitalLetter
 {
 
         public static void main(String[] args)
