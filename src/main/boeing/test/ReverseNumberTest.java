@@ -11,12 +11,11 @@ public class ReverseNumberTest {
     @Test
     public void demo() {
         ReverseNumber obj = new ReverseNumber();
-        String expectedValue = "123";
+        String expectedValue = "123456789";
         //Act
-        String actualValue=obj.function("321");
+        String actualValue=obj.function("987654321");
         //Assert
         assertEquals(expectedValue,actualValue);
     }
-
 
 }

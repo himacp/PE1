@@ -24,9 +24,9 @@ public class CapitalLetterTest
     public void demo()
     {
         CapitalLetter obj = new CapitalLetter ();
-        String expectedValue = "Capital Letter";
+        String expectedValue = "The entered character is a Capital Letter";
         //Act
-        String actualValue=obj.func('A');
+        String actualValue=obj.letter('A');
         //Assert
         assertEquals(expectedValue,actualValue);
 

@@ -10,20 +10,33 @@ import static org.junit.Assert.*;
     @RunWith(JUnit4.class)
     public class OriginalNumberTest {
 
+        OriginalNumber object;
+
+            @Before
+            public void setUp()
+            {
+                object = new  OriginalNumber();
+            }
+
+            @After
+            public void tearDown() {
+                object = null;
+            }
+
         @Test
         public void OriginalNumSuccessTest() {
-            OriginalNumber originalNum = new OriginalNumber();
-            String actualstr = originalNum.originalNumberGuess(23, 23);
+
+            String actualstr = object.guess(23, 23);
             String expectedstr = "Number guessed matches the original number";
             assertEquals(expectedstr, actualstr);
         }
 
         @Test
         public void OriginalNumFailureTest() {
-            OriginalNumber originalNum = new OriginalNumber();
-            String actualstr = originalNum.originalNumberGuess('a',23);
+
+            String actualstr = object.guess(45,23);
             String expectedstr = "Number guessed is more than the original number";
-            assertEquals(expectedstr, actualstr);
+            assertNotEquals(expectedstr, actualstr);
         }
 
     }

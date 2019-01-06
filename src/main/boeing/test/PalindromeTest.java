@@ -1,24 +1,33 @@
+import org.junit.After;
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
 import static org.junit.Assert.*;
+import org.junit.*;
+import static org.junit.Assert.*;
 
-    @RunWith(JUnit4.class)
+public class PalindromeTest {
+    Palindrome object;
 
-    public class PalindromeTest {
+    @Before
+    public void setUp() {
+        object = new Palindrome();
+    }
 
-        @Test
-        public void demo() {
-            Palindrome obj = new Palindrome();
-            String expectedValue = "123321 is a palindrome and sum of even number is less than 25.";
-            //Act
-            String actualValue=obj.required(123321);
-            //Assert
-            assertEquals(expectedValue,actualValue);
-        }
+    @After
+    public void tearDown() {
+        object = null;
+    }
 
+    @Test
+    public void numberPalindrome() throws Exception {
 
-
-
+        int expectedValue = 12244221;
+        //Act
+        int actualValue = object.palindromefunction(12244221);
+        //Assert
+        assertEquals(expectedValue, actualValue);
+    }
 }

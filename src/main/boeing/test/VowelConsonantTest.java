@@ -1,4 +1,7 @@
 import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
@@ -8,6 +11,18 @@ import org.junit.runners.JUnit4;
 
 public class VowelConsonantTest
 {
+    VowelConsonant object;
+
+    @Before
+    public void setUp() {
+        object = new VowelConsonant();
+    }
+
+    @After
+    public void tearDown() {
+        object = null;
+    }
+
 
     @Test
     public void demo()
@@ -25,9 +40,5 @@ public class VowelConsonantTest
         //Assert
         assertEquals(expectedValue,actualValue);
     }
-
-
-
-
 
 }

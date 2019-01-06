@@ -1,4 +1,4 @@
-package com.company;
+
 
 /**
  *  This program is about
@@ -12,30 +12,18 @@ package com.company;
 
     public class OriginalNumber {
 
+    String guess(int number, int compare) {
 
-        public static void main(String[] args) {
-            int n;
-            int sum = 0;
-            Scanner input = new Scanner(System.in);
-            System.out.println("Enter your Number:");
+        while (true) {
+            if (number < compare) {
+                return "Number guessed is less than original number";
 
-            while (input.hasNextInt()) {
-                n = input.nextInt();
-                if( n >=1 && n <= 100 )
-                {
-                    System.out.println("Number guessed matches the original number" );
-                    break;
-                }
-                else if(n<=1 )
-                {
-                    System.out.println("Number guessed is less than the original number" );
-                }
-                else
-                {
-                    System.out.println("Number guessed is more than the original number" );
-                }
+            } else if (number > compare) {
+                return "Number guessed is greater than original number";
+
+            } else {
+                return "Number guessed matches the original number";
             }
-
         }
     }
-
+}

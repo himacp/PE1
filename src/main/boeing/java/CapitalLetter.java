@@ -17,27 +17,25 @@ import java.util.Scanner;
 public class CapitalLetter
 {
 
-        public static void main(String[] args)
-        {
-            char h;
-            Scanner input=new Scanner(System.in);
-            h =input.next().charAt(0);
+        public String letter(char h){
+
             if( h >=65 && h <= 90 )
             {
-                System.out.println("The entered character is a Capital Letter");
+                return "The entered character is a Capital Letter";
             }
             else if( h >=97 && h <= 122 )
             {
-                System.out.println("The entered character is a small Letter");
+                return "The entered character is a small Letter";
             }
             else if( h >= 48 && h <= 57 )
             {
-                System.out.println("The entered character is a Digit");
+                return "The entered character is a Digit";
             }
             else
             {
-                System.out.println("The entered character is a Special Symbol");
+                return "The entered character is a Special Symbol";
             }
 
         }
 }
+
