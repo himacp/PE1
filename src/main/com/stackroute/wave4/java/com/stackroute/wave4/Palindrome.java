@@ -1,4 +1,4 @@
-
+package com.stackroute.wave4;
 
 
 /**
@@ -14,7 +14,8 @@ public class Palindrome {
     private int sum=0;
     private int original;
 
-    int palindromefunction(int number) {
+    int palindromefunction(int number) //Palindrome Check
+    {
         original = number;
         int reverse = 0;
         int remainder;
@@ -37,14 +38,14 @@ public class Palindrome {
     int total(int reverse){
         if(original == reverse){
             if(sum < 25){
-                //System.out.println( original + " is palindrome and the sum of even numbers is less than 25");
+                //If it is palindrome and the sum of even numbers is less than 25");
             }
             else {
-                //System.out.println( original + " is palindrome and the sum of even numbers is greater than 25");
+                //If it  is palindrome and the sum of even numbers is greater than 25");
             }
         }
         else {
-            //System.out.println( original + " is not palindrome");
+            //If it is not palindrome");
         }
         return sum;
     }

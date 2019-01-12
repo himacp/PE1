@@ -1,4 +1,4 @@
-/* Hima C P
+package com.stackroute.wave4;/* Hima C P
  *
  * Stack Route,Bangalore
  *
@@ -24,14 +24,6 @@ public class ReverseNumber {
         return s;
 
     }
-    public static void main(String[] args)
-    {
-        String str;
-        Scanner in=new Scanner(System.in);
-        str=in.nextLine();
-        ReverseNumber obj=new ReverseNumber();
-        System.out.println(obj.function(str));
 
-    }
 }
 

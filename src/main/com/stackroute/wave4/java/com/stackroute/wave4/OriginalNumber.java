@@ -1,4 +1,4 @@
-
+package com.stackroute.wave4;
 
 /**
  *  This program is about
@@ -11,7 +11,7 @@
     import java.util.Scanner;
 
     public class OriginalNumber {
-
+//Comparison of String
     String guess(int number, int compare) {
 
         while (true) {

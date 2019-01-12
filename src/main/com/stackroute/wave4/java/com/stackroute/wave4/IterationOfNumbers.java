@@ -1,3 +1,6 @@
+package com.stackroute.wave4;
+
+
 /* Hima C P
  *
  * Stack Route,Bangalore
@@ -23,17 +26,10 @@ public class IterationOfNumbers
     {
         for( int j=1; j<=i ;j++ )
         {
-            str=str+Integer.toString(i)+" ";
+            str=str+Integer.toString(i)+" "; //conversion of integer to string
         }
     }
        return str;
        }
-    public static void main(String[] args) {
-            Scanner input = new Scanner(System.in);
-            System.out.println("Enter your Number:");
-            int num=input.nextInt();
-             IterationOfNumbers obj = new IterationOfNumbers();
-        System.out.println(obj.function(num));
 
-        }
     }

@@ -1,4 +1,4 @@
-
+package com.stackroute.wave4;
 
 /**Write a program which accepts a number as input from user and perform the following:
  * a. sort the number in non-increasing order
@@ -19,7 +19,7 @@ public class SortNumbers {
             s = input % 10;
             arr[i] = s;
         }
-        /*sorting the digits in non increasing order*/
+                                      //sorting the digits in non increasing order
         for (int k = 0; k < i - 1; k++) {
             for (int j = 0; j < i - k - 1; j++) {
                 if (arr[j] < arr[j + 1]) {

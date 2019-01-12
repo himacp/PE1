@@ -1,3 +1,6 @@
+package com.stackroute.wave4;
+
+
 /* Hima C P
  *
  * Stack Route,Bangalore
@@ -13,7 +16,7 @@
  *   c.whether the character entered is a digit.
  *   whether the character entered is a special Character.
  */
-import java.util.Scanner;
+
 public class CapitalLetter
 {
 

@@ -1,3 +1,7 @@
+package com.stackroute.wave4;
+
+
+import com.stackroute.wave4.RepeatWord;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -27,6 +31,26 @@ public class RepeatWordTest {
         String actualValue = repeatWord.repeatNtimes("stackroute", 2);
         //Assert
         assertEquals(expectedValue, actualValue);
+
+    }
+    @Test
+    public void repeatWordTestsuccess() {
+        RepeatWord repeatWord = new RepeatWord();
+        String expectedValue = "Himamama";
+        //Act
+        String actualValue = repeatWord.repeatNtimes("Hima", 2);
+        //Assert
+        assertEquals(expectedValue, actualValue);
+
+    }
+    @Test
+    public void repeatWordTestfaliure() {
+        RepeatWord repeatWord = new RepeatWord();
+        String expectedValue = "stackroutetete";
+        //Act
+        String actualValue = repeatWord.repeatNtimes("stackroute", 3);
+        //Assert
+        assertNotEquals(expectedValue, actualValue);
 
     }
 }

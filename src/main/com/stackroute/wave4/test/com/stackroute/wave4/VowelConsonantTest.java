@@ -1,5 +1,8 @@
+package com.stackroute.wave4;
+
 import static org.junit.Assert.*;
 
+import com.stackroute.wave4.VowelConsonant;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -25,18 +28,20 @@ public class VowelConsonantTest
 
 
     @Test
-    public void demo()
-    {
+    public void demo() {
         VowelConsonant obj = new VowelConsonant();
         String expectedValue = "Consonant";
         //Act
-        String actualValue=obj.func('h');
+        String actualValue = object.func('h');
         //Assert
-        assertEquals(expectedValue,actualValue);
-
-        expectedValue = "vowel";
+        assertEquals(expectedValue, actualValue);
+    }
+        @Test
+        public void demoSuccess1()
+        {
+         String expectedValue = "vowel";
         //Act
-        actualValue=obj.func('a');
+       String actualValue=object.func('a');
         //Assert
         assertEquals(expectedValue,actualValue);
     }

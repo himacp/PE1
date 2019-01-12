@@ -1,5 +1,7 @@
+package com.stackroute.wave4;
 import static org.junit.Assert.*;
 
+import com.stackroute.wave4.IterationOfNumbers;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -24,7 +26,7 @@ public class IterationOfNumbersTest
             object = null;
         }
     @Test
-    public void demo()
+    public void succes()
     {
         IterationOfNumbers obj = new IterationOfNumbers();
         String expectedValue = "1 2 2 3 3 3 ";
@@ -34,5 +36,15 @@ public class IterationOfNumbersTest
         assertEquals(expectedValue,actualValue);
 
     }
+    @Test
+    public void success1()
+    {
+        IterationOfNumbers obj = new IterationOfNumbers();
+        String expectedValue = "1 2 2 3 3 3 ";
+        //Act
+        String actualValue=obj.function(3);
+        //Assert
+        assertEquals(expectedValue,actualValue);
 
+    }
 }

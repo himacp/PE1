@@ -1,4 +1,4 @@
-/* Hima C P
+package com.stackroute.wave4;/* Hima C P
  *
  * Stack Route,Bangalore
  *
@@ -15,10 +15,11 @@ public class RepeatWord
 
 
         for (int i = 0; i <= str.length() - 1; i++) {
-            string1 = string1 + str.charAt(i);
+            string1 = string1 + str.charAt(i);  //Checking for each character
         }
         for (int j = 0; j < n; j++) {
-            for (int i = str.length() - n; i <= str.length() - 1; i++) {
+            for (int i = str.length() - n; i <= str.length() - 1; i++) // Repeatition of word
+            {
                 string1 = string1 + str.charAt(i);
             }
         }

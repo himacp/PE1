@@ -1,4 +1,4 @@
-/* Hima C P
+package com.stackroute.wave4;/* Hima C P
  *
  * Stack Route,Bangalore
  *
@@ -20,21 +20,9 @@ public class VowelConsonant {
         } else {
             return "Consonant";
         }
-    }
-
-    public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        System.out.println("Enter your String");
-        String str = input.nextLine();
-        char c;
-        for (int i = 0; i < str.length(); i++) {
-            c = str.charAt(i);
-            VowelConsonant obj = new VowelConsonant();
-            System.out.println(obj.func(c));
 
 
         }
 
     }
-}
 

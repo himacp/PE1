@@ -1,3 +1,5 @@
+package com.stackroute.wave4;
+import com.stackroute.wave4.CapitalLetter;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -21,7 +23,7 @@ public class CapitalLetterTest
             object = null;
         }
     @Test
-    public void demo()
+    public void demosuccess()
     {
         CapitalLetter obj = new CapitalLetter ();
         String expectedValue = "The entered character is a Capital Letter";
@@ -31,6 +33,16 @@ public class CapitalLetterTest
         assertEquals(expectedValue,actualValue);
 
     }
+    @Test
+    public void demosuccess1()
+    {
+        CapitalLetter obj = new CapitalLetter ();
+        String expectedValue1 = "The entered character is a small Letter";
+        //Act
+        String actualValue1=obj.letter('a');
+        //Assert
+        assertEquals(expectedValue1,actualValue1);
 
+    }
 
 }
